@@ -32,26 +32,64 @@ body {
 }
 
 .member-img img {
-  width: 60%;
+  max-width: 250px;
 }
 
-.team-container .member-card:nth-of-type(2) {
-  margin-top: 20%;
-}
-
+.team-container .member-card:nth-of-type(2),
 .team-container .member-card:nth-of-type(5) {
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .role {
+  position: absolute;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  padding: 0;
-  margin: 0;
   font-weight: 300;
+  margin-left: 250px;
+  justify-content: right;
 }
 
 .member-card {
   display: inline-flex;
   font-weight: 700;
+}
+
+@media (max-width: 2800px) and (min-width: 1800px) {
+  .team-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 989px) {
+  html {
+    font-size: 16px;
+  }
+  .header-container {
+    display: grid;
+    width: 100%;
+  }
+
+  .header-container h1 {
+    width: 80%;
+  }
+
+  .header-container .description,
+  .header-container .description p {
+    width: 90%;
+  }
+
+  .team-container {
+    display: grid;
+    grid-template-columns: 52% 15%;
+  }
+  .team-container .member-card:nth-of-type(5) {
+    margin-top: 0;
+  }
+
+  .team-container .member-card:nth-of-type(2),
+  .team-container .member-card:nth-of-type(4),
+  .team-container .member-card:nth-of-type(6) {
+    margin-top: 30%;
+  }
 }

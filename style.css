@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 8%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header-container h1 {
+  font-family: "PT Serif", serif;
+  font-size: 2.7rem;
+  width: 50%;
+}
+
+.header-container .description {
+  width: 55%;
+}
+
+.header-container .description p {
+  width: 50%;
+  line-height: 1.4rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.member-img img {
+  width: 60%;
+}
+
+.team-container .member-card:nth-of-type(2) {
+  margin-top: 20%;
+}
+
+.team-container .member-card:nth-of-type(5) {
+  margin-top: 20%;
+}
+
+.role {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+.member-card {
+  display: inline-flex;
+  font-weight: 700;
+}

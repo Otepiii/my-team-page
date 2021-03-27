@@ -94,7 +94,7 @@ body {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .team-container {
     display: grid;
     grid-template-columns: 0;

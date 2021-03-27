@@ -54,10 +54,25 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 2800px) and (min-width: 1800px) {
+@media (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
   .team-container {
     width: 60%;
     margin: 0 auto;
+  }
+  .member-img img {
+    max-width: 350px;
+  }
+
+  .role {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 300;
+    margin-left: 350px;
+    justify-content: right;
   }
 }
 
@@ -97,6 +112,19 @@ body {
 @media (max-width: 650px) {
   .team-container {
     display: grid;
-    grid-template-columns: 0;
+    grid-template-columns: 5%;
+    grid-gap: 2rem;
+    margin: 0 auto;
+  }
+  .member-card {
+    padding: 0.5rem;
+  }
+  .role {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 300;
+    margin-left: 250px;
+    justify-content: right;
   }
 }

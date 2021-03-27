@@ -93,3 +93,10 @@ body {
     margin-top: 30%;
   }
 }
+
+@media (max-width: 550px) {
+  .team-container {
+    display: grid;
+    grid-template-columns: 0;
+  }
+}
